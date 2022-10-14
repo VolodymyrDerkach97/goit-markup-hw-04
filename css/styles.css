@@ -46,7 +46,6 @@ body {
     margin-left: auto;
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1600px;
     /* outline: 3px dashed green; */
 }
 
@@ -72,13 +71,18 @@ img {
 /* CSS для Index.html */
 
 /* Хедер index.html і portfilio.html*/
+.header {
+    border-bottom: 1px solid #ececec;
+}
 
 .navigation {
     display: flex;
-    border-bottom: 1px solid #ececec;
     
 }
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-right: 93px;
 
     font-family: 'Raleway', sans-serif;
@@ -175,8 +179,10 @@ img {
 .section-hero{
     margin-right: auto;
     margin-left: auto;
-    width: 1600px;
-    height: 600px;
+    width: 100%;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--bg-color);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -190,8 +196,7 @@ img {
 }
 
 .hero-pos {
-    padding-top: 200px;
-    padding-bottom: 200px;
+
 }
 
 
@@ -240,15 +245,17 @@ img {
     display: flex;
  }
 
- .advantages-icon {
-    width: 270px;
+ .advantages-icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 120px;
-    padding: 25px 100px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
     border-radius: 4px;
-    
  }
+
 
  .avantages-item {
     width: calc((100% - 3 * 30px)/4);
@@ -625,7 +632,7 @@ img {
 }
 
 .portfolio-list-item{
-    width: 370px;
+    width: calc((100% - 2*30px)/3);
     border: 1px solid #EEEEEE;
 }
 
